@@ -24,7 +24,7 @@ const Sidebar = ({ isSidebarVisible }) => {
     return (
         <aside className={`bg-white text-white h-screen w-64 fixed top-0 border border-1 border-gray-100 ${isSidebarVisible ? 'block' : 'hidden md:block'}`}>
             <ul className="py-4 my-4 mr-4 space-y-4">
-                <li className="px-4 py-2 text-black cursor-pointer">
+                <li className="px-4 py-2 text-green-600 cursor-pointer">
                     <h2 className="mb-8 text-xl">Zippy</h2>
                 </li>
                 <li className={`px-4 py-2 space-x-2 flex flex-row ${activeLink === '/dashboard' ? 'text-green-500 bg-green-100' : 'text-gray-500 hover:bg-green-100 hover:text-green-500'} cursor-pointer rounded-lg transition-width ease-in-out duration-300`}>
