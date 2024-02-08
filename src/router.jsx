@@ -9,7 +9,12 @@ import MyTransaction from "./Page/MyTransaction";
 
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Login />
+  },
     {
+      
       path: '/',
       element: <Default />,
       children: [
@@ -40,7 +45,8 @@ const router = createBrowserRouter([
     {
       path: "*",
       element: <NotFound />
-    }
+    },
+    
   ]);
   
 
